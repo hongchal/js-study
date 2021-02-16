@@ -1,5 +1,5 @@
-const formContainer = document.querySelector(".js-form"),
-    input = formContainer.querySelector("input"),
+const Nameform = document.querySelector(".js-Nameform"),
+    input = Nameform.querySelector("input"),
     greeting_msg = document.querySelector("h4");
 
 const USER_LS = "currentUserName",
@@ -18,12 +18,12 @@ function submitHandler(event){
 }
 
 function askForName(){
-    formContainer.classList.add(SHOWING_CN);
-    formContainer.addEventListener("submit", submitHandler);
+    Nameform.classList.add(SHOWING_CN);
+    Nameform.addEventListener("submit", submitHandler);
 }
 
 function showGreeting(text){
-    formContainer.classList.remove(SHOWING_CN);
+    Nameform.classList.remove(SHOWING_CN);
     greeting_msg.classList.add(SHOWING_CN);
     greeting_msg.innerText = `Hello ${text} :)`;
 }

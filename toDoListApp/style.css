@@ -1,8 +1,7 @@
-.js-clock{
-    border: 1px solid black;
-}
-
-.js-form{
+.js-clock,
+.js-greeting,
+.js-toDoForm
+{
     border: 1px solid black;
 }
 

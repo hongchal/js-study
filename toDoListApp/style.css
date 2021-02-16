@@ -1,3 +1,16 @@
-.clock{
+.js-clock{
     border: 1px solid black;
+}
+
+.js-form{
+    border: 1px solid black;
+}
+
+.form,
+.greeting{
+    display: none;
+}
+
+.showing{
+    display: block;
 }

@@ -6,9 +6,11 @@ function getCurrentTime(){
     const hours = date.getHours();
     const sec = date.getSeconds();
     const min = date.getMinutes();
-    clockTitle.innerText = `${hours}:${min}:${sec}`;
+    clockTitle.innerText = 
+    `${hours < 10 ? `0${hours}` : hours}:${
+        min < 10 ? `0${min}` : min}:${
+        sec < 10 ? `0${sec}`: sec}`;
 }
-
 
 function init(){
     getCurrentTime();

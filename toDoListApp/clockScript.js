@@ -12,6 +12,7 @@ function getCurrentTime(){
 
 function init(){
     getCurrentTime();
+    setInterval(getCurrentTime, 1000);
 }
 
 init();

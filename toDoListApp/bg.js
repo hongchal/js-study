@@ -10,7 +10,6 @@ function genRandomNum(){
 
 function init(){
     const randomNum = genRandomNum();
-    console.log(randomNum);
     const image = document.createElement("img");
     image.src = `images/${randomNum}.jpg`;
     image.classList.add("bgimg");

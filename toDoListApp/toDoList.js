@@ -39,6 +39,7 @@ function showToDoList(text){
     
     delbtn.innerText = "➖";
     delbtn.addEventListener("click", dltbtnhandler);
+    delbtn.classList.add("delbtn");
     const span = document.createElement("span");
     span.innerText = text;
     li.appendChild(delbtn);

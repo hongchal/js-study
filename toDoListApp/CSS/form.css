@@ -1,0 +1,12 @@
+.mainForm{
+    /* border: 1px solid black; */
+    margin-left: 10%;
+    margin-right: 50%;
+    margin-top: 30pt;
+}
+
+.nameForm{
+    display: none;
+}
+
+

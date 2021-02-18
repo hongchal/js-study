@@ -3,27 +3,31 @@
 <head>
     <title>toDoListApp</title>
     <meta charset="utf-8" >
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
 </head>
 
 <body>
-    <div class="js-clock">
+    <span class="js-weather weather"></span>
+    
+    <div class="js-clock clock">
         <h1>00:00:00</h1>
     </div>
     
-    <form class="js-Nameform form">
-        <input type="text" placeholder="What is your name?">
-    </form>
-    <h4 class="js-greeting greeting">hiiii stranger</h4>
+    <section class="mainForm">
+        <form class="js-Nameform nameForm">
+            <input type="text" placeholder="Type your name here">
+        </form>
+        <h4 class="js-greeting greeting">hiiii stranger</h4>
+
+        <form class="js-toDoForm">
+            <input type="text" placeholder="Write To Do here">
+        </form>
+
+        <ul class="js-toDoList toDoList"></ul>
+        
+    </section>
     
-    <form class="js-toDoForm">
-        <input type="text" placeholder="what is your to do?">
-    </form>
-
-    <ul class="js-toDoList toDoList"></ul>
-
-    <span class="js-weather"></span>
-
+    
     <script src="clock.js"></script>
     <script src="greeting.js"></script>
     <script src="toDoList.js"></script>
